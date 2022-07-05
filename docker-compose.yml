@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web-app:
+    image: quay.io/northconcepts/simpledatahub:${SDH_VERSION}
+    restart: unless-stopped
+    environment:
+      DATABASE_FOLDER: /usr/local/tomcat/webapps/ROOT/WEB-INF/database
+#      JAVA_OPTS: >-
+#        -Denv=Dev
+    ports:
+      - 8082:8082   # HTTP
+    volumes:
+      - ./database:/usr/local/tomcat/webapps/ROOT/WEB-INF/database
+      - ./logs:/usr/local/tomcat/logs
