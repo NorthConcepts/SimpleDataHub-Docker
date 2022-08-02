@@ -2,5 +2,8 @@
 Dockerized SimpleDataHub web app by NorthConcepts
 
 - **Run:** `docker-compose up`
+- **Provide Docker with access to the following folders if prompted**
+  - database
+  - logs
 - **URL:** http://localhost:8082/
-- **Login:** admin@northconcepts.com / admin@northconcepts.com 
+
