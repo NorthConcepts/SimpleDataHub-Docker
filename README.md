@@ -1,9 +1,10 @@
 # SimpleDataHub-Docker
 Dockerized SimpleDataHub web app by NorthConcepts
 
+- **Run:** `docker-compose pull`
 - **Run:** `docker-compose up`
 - **Provide Docker with access to the following folders if prompted**
   - database
   - logs
-- **URL:** http://localhost:8082/
+- **Browse URL:** http://localhost:8082/
 
